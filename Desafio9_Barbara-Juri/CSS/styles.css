@@ -1,0 +1,26 @@
+.calculadora {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#display {
+    width: 208px;
+    height: 40px;
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 0px;
+}
+
+.botones button {
+    width: 50px;
+    height: 50px;
+    margin-top: 1px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
