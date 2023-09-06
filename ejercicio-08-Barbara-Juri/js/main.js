@@ -19,7 +19,6 @@ window.onload = function() {
     
 
     textArea.value = '<p>Este contenido <strong>está listo</strong><br>para ser editado y pasarlo abajo.</p>';
-    listado[0] = 'OK' + listado[0]
 
     
     textArea.oninput = function() {
