@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&family=Luckiest+Guy&display=swap');
+/* font-family: 'Cinzel', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Luckiest Guy', cursive; */
+
+body {
+    width: 100vw;
+    margin: 0;
+    /* padding: 0; */
+    font-family: 'Indie Flower', cursive; 
+}
+
+header {
+    font-size: 2rem;
+    height: 17vh;
+    width: 100vw;
+    position: fixed; 
+    background-color: dodgerblue;
+    background-image: radial-gradient(circle at 120.17% 50%, #dbf79e 0, #cef8a1 10%, #bef5a1 20%, #a9ef9e 30%, #8ee598 40%, #6cd890 50%, #41cb89 60%, #00c188 70%, #00b98a 80%, #00b591 90%, #00b49b 100%);
+    box-shadow:inset 2px -2px 4px rgba(0, 0, 0 , 0.8);
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: -1px 1px 2px black;
+    height: 60%;
+}
+#pet-nombre {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    height: fit-content;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    text-shadow: -2px 2px 2px black;
+    color: orange;
+}
+
+#barra-busqueda {
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40%;
+    text-align: right;
+}
+#input-barra {
+    width: 60%;
+    height: 30px;
+}
+#boton {
+    border: none;
+    width: 20%;
+    height: 30px;
+    background-color: orange;
+    font-family: 'Luckiest Guy', cursive; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#logo {
+    width: 7%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.ul-header {
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.ul-header li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100vw;
+    background-color: dodgerblue;
+    background-image: radial-gradient(circle at 120.17% 50%, #dbf79e 0, #cef8a1 10%, #bef5a1 20%, #a9ef9e 30%, #8ee598 40%, #6cd890 50%, #41cb89 60%, #00c188 70%, #00b98a 80%, #00b591 90%, #00b49b 100%);
+    bottom: 0;
+}
+#footer {
+    margin-right: 20px;
+}
+
+.redes {
+    text-decoration: none;
+}
+
+@media (max-width: 568px){
+    header {
+        padding: 10px;
+    }
+    .ul-header {
+        justify-content: flex-start;
+    }
+    .ul-header li a {
+        font-size: 0.8rem;
+    }
+    #barra-busqueda {
+        width: 70%;
+        text-align: center;
+    }
+    #boton {
+        width: 25%;
+        font-size: 1rem;
+        border: 1px solid black;
+    }
+    #logo {
+        padding-top: 10px;
+        width: 15%;
+
+    } 
+    #pet-nombre {
+        left: 5%;
+        top: 20%;
+        font-size: 1.5rem;
+        left: 30%;
+    }
+    footer {
+        font-size: 1rem;
+    }
+    }

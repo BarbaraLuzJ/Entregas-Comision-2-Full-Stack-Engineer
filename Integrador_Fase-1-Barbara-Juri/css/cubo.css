@@ -1,0 +1,68 @@
+.cubo {
+    margin-left: 10%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    padding-top: 20vh;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateY(-10deg);
+    transition: transform ease-in 7s;
+}
+
+.cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.cara-frontal {
+    transform: translateZ(100px);
+    background-image: url(../img-cubo/pototo-cuadradito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cara-trasera {
+    transform: rotateY(180deg) translateZ(100px);
+    background-image: url(../img-cubo/pototo-papayita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cara-superior {
+    transform: rotateX(90deg) translateZ(100px);
+    background-image: url(../img-cubo/papaya-rata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cara-inferior {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-image: url(../img-cubo/pototo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cara-izquierda {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-image: url(../img-cubo/papaya-dardito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cara-derecha {
+    transform: rotateY(90deg) translateZ(100px);
+    background-image: url(../img-cubo/pototo2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cubo:hover {
+    transform: rotateX(360deg) rotateY(90deg);
+}
+@media (max-width:768px) {
+    .cubo {
+        display: none;
+    }
+}

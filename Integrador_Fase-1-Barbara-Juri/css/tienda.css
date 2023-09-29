@@ -1,0 +1,65 @@
+#main-tienda {
+    padding-top: 15vh;
+    height: auto;
+    text-align: center;
+    background-color:white;
+    background-image: url(../fondos/png-tienda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards-container {
+    margin: 0 20%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section img {
+    width: 40%;
+    /* float: left; */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+section {
+    width: 300px;
+    height: 420;
+    /* padding: 15px; */
+    background-color:#847aba;
+    color: black;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: -6px 6px 6px black;
+    transition: 1s ease-in;
+}
+section:hover {
+    transform: scale(1.2);
+    background-image: radial-gradient(circle at 50% 50%, #ffdfff 0, #f5c0ff 25%, #b99df2 50%, #847aba 75%, #5a5b88 100%);
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: -2px 2px 4px white;
+}
+
+.section-cards-header h1 {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 3rem;
+    color: black;
+    text-shadow: -4px 4px 8px white;
+    text-decoration: underline;
+}
+
+.cards-container section p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.precio {
+    color: pink;
+}

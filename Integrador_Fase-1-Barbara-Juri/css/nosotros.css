@@ -1,0 +1,53 @@
+#main-nosotros {
+    padding-top: 16vh;
+    height: 80vh;
+}
+#primer-hoja {
+    margin-left: 40%;
+    font-size: 1rem;
+    border:1px solid black;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.7);
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    background-image: url(../fondos/gatos-rama-verde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in;
+    position: absolute;
+    top: 20vh;
+    
+}
+#segunda-hoja {
+    margin-left: 40%;
+    font-size: 1rem;
+    border:1px solid black;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.6);
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    background-image: url(../fondos/panadero.png);
+    position: absolute;
+    top: 20vh;
+}
+#primer-hoja:hover {
+    opacity: 0;
+}
+
+@media (max-width:768px) {
+    #primer-hoja{
+        padding: 0 5px;
+        margin: 0;
+        width: 100%;
+    }
+    #segunda-hoja {
+        padding: 0 5px;
+        margin: 0;
+        width: 100%;
+    }
+}

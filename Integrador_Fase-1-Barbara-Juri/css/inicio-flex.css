@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+main {
+    width: 100vw;
+    min-height: 70vh;
+    padding-top: 20vh;
+    text-align: center;
+    background-color:lightgreen;
+    background-image: url(../fondos/burbujas-colores.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Luckiest Guy', cursive;
+}
+#section-mascotas {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-mascotas {
+    box-shadow: 0px 0px 12px #d70238;
+    background-color:#00b592;
+}
+.categorias {
+    width: 200px;
+    height: 100px;;
+}
+.ul-index {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ul-index a {
+    text-decoration: none;
+    list-style: none;
+    text-shadow: -2px 2px 2px black;
+    color:#fb803d;
+    font-size: 1.3rem;
+}
+.ul-index li:hover {
+    text-decoration: underline;
+}
+
+.ul-index li {
+    width: 100%;
+    margin: 4px 0;
+}
+.ul-index li::before {
+    content: ' - ';
+}
+.mascotas {
+    width: 200px;
+    height: 200px;
+    color: white;
+    line-height: 150px;
+}
+
+#perros {
+    background-image: url(../img-inicio/perritoreal.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gatos {
+    background-image: url(../img-inicio/gatitoreal.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#peces {
+    background-image: url(../img-inicio/pecesreales.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#aves {
+    background-image: url(../img-inicio/avereal.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#otras-especies {
+    background-image: url(../img-inicio/conejoreal.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

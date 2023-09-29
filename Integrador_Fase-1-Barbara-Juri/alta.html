@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/alta.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 id="pet-nombre">"Pototo y Papaya"</h3>
+            <img id="logo" src="./logo/pet-shop-logo-71DDBB16DF-seeklogo.com.png" alt="logo-gato" >
+            <form id="barra-busqueda" action="#">
+                <input id="input-barra" type="text">
+                <input id="boton" type="submit" value="Buscar">
+            </form>
+        </nav>
+        <ul class="ul-header">
+            <li> <a href="./index.html">Inicio</a> </li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li> <a href="./tienda.html">Tienda</a> </li>
+            <li> <a href="./alta.html">Alta</a> </li>
+            <li> <a href="./contacto.html"><span class="icon-mail"></span></a> </li>
+            <li> <a href="./carrito.html"><span class="icon-shopping-cart"></span></a> </li>
+        </ul>
+        
+    </header>
+
+    <main id="main-alta">
+        <div class="container-form">
+            <h3>Alta de productos</h3>
+        <form onsubmit="agregar(event)" class="alta-form">
+            
+            <div class="input-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="precio">Precio</label>
+                <input type="number" step="0.00" name="precio" id="precio" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="stock">Stock</label>
+                <input type="number" name="stock" id="stock" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="categoria">Categoria</label>
+                <input type="text" name="categoria" id="categoria" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="subcategoria">Subcategoria</label>
+                <input type="text" name="subcategoria" id="subcategoria" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto" required>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" name="envio" id="envio" required>
+                <label for="envio">Envio</label>
+                <div class="error-detail"></div>
+            </div>
+
+            <!-- <button onclick="agregar(event)">Agregar</button> -->
+            <button id="botonForm">Agregar</button>
+
+        </form>
+        </div>
+        
+
+        <h2>Lista de productos disponibles</h2>
+
+        <table></table>
+
+
+    </main>
+
+    <footer>
+        <h4>&copy Copyright 2023</h4>
+        <div id="footer">
+            <a class="redes" href="./contacto.html"><span class="icon-mail"></span></a>
+            <a class="redes"  href=""><span class="icon-facebook"></span></a>
+            <a class="redes"  href=""><span class="icon-instagram"></span></a>
+            <a class="redes"  href=""><span class="icon-whatsapp"></span></img></a>   
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/alta.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
