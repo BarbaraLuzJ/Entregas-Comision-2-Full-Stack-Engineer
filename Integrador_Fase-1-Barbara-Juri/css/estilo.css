@@ -11,7 +11,6 @@ body {
 }
 
 header {
-    font-size: 2rem;
     height: 17vh;
     width: 100vw;
     position: fixed; 
@@ -27,8 +26,10 @@ nav {
     font-family: 'Luckiest Guy', cursive;
     text-shadow: -1px 1px 2px black;
     height: 60%;
+
 }
 #pet-nombre {
+    font-size: 2rem;
     position: absolute;
     top: 7%;
     left: 10%;
@@ -40,10 +41,11 @@ nav {
 }
 
 #barra-busqueda {
+    margin-bottom: 5px;
     margin-right: 20px;
     position: absolute;
     right: 0;
-    top: 10px;
+    bottom: 0;
     width: 40%;
     text-align: right;
 }
@@ -111,13 +113,16 @@ footer {
         padding: 10px;
     }
     .ul-header {
-        justify-content: flex-start;
+        justify-content: center;
+        gap: 5px;
     }
     .ul-header li a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     #barra-busqueda {
-        width: 70%;
+        text-align: left;
+        width: 80%;
+        left: 13%;
         text-align: center;
     }
     #boton {
@@ -126,15 +131,14 @@ footer {
         border: 1px solid black;
     }
     #logo {
-        padding-top: 10px;
+        padding-top: 10%;
         width: 15%;
 
     } 
     #pet-nombre {
-        left: 5%;
-        top: 20%;
-        font-size: 1.5rem;
-        left: 30%;
+        font-size: 1.25rem;
+        top: 15%;
+        left: 20%;
     }
     footer {
         font-size: 1rem;
