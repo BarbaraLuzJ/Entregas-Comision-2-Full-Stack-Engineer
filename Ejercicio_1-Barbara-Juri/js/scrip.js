@@ -7,6 +7,11 @@ var h2 = document.querySelectorAll('h2')[1];
 var botonAtras = document.querySelectorAll('button')[0];
 var botonSiguiente = document.querySelectorAll('button')[1];
 
+var agregar = document.createElement('button');
+agregar.innerText = "Agregar color";
+agregar.id = 'agregar'
+document.body.appendChild(agregar)
+
 const colores = ['red', 'green', 'blue', 'black'];
 var contador = 0;
 
@@ -42,19 +47,15 @@ colorFondo (colores, h2);
 botonSiguiente.addEventListener('click', () =>{
     acumulador (colores, 1)
     colorFondo (colores, h2);
-    h2.innerHTML += '  <button id="btn">Agregar color</button>'
-    btn.addEventListener('click', () => {
-        agregarColor(colores)
-    })
 })
 
 botonAtras.addEventListener('click', () =>{
     acumulador (colores, -1);
     colorFondo (colores, h2);
-    h2.innerHTML += '  <button id="btn">Agregar color</button>'
-    btn.addEventListener('click', () => {
-        agregarColor(colores)
-    })
+})
+
+agregar.addEventListener('click', function (){
+    agregarColor(colores)
 })
 
 
