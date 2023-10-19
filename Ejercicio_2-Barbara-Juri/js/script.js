@@ -22,7 +22,7 @@ const dolarOficial = (url, method) => {
     xhr.addEventListener('load', () => {
         if (xhr.status == 200) {
             respuesta = JSON.parse(xhr.response);
-            cotizacion = respuesta[1].casa.venta;
+            cotizacion = respuesta[0].casa.venta;
             dolar.value = parseFloat(cotizacion).toFixed(2);
             // console.log(parseFloat(cotizacion).toFixed(2));
         }
