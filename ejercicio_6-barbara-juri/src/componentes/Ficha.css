@@ -1,0 +1,13 @@
+.ficha {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.ficha p {
+    text-align: center;
+    padding: 25px;
+    margin: 5px;
+    color: white;
+}

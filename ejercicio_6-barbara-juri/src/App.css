@@ -1,0 +1,18 @@
+.App {
+  margin: 20px auto;
+  width: 480px;
+  height: 550px;
+}
+.App h1 {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 450px;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 10px;
+  grid-template-rows: 160px;
+}
+
