@@ -11,9 +11,9 @@ app.get('/hora', (req, res) =>{
     else if (hora>=13 && hora<=19) {
         mensaje = 'Buenas tardes!';
     }
-    else if(hora>=20 && hora<=5) {
-        mensaje = 'Buenas noches';
-    }
+    else if (hora >= 20 || hora <= 5) {
+        mensaje = 'Buenas noches!';
+    }    
     res.status(200).send(`<h2 style="color: blue">${mensaje}</h2>`)
 })
 
