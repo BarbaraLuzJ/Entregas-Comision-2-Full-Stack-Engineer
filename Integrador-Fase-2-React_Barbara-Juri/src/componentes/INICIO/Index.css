@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+.Inicio {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 25vh;
+    text-align: center;
+    background-color:cadetblue;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(./Imagenes/hojas.png);
+    background-repeat: no-repeat;
+}
+.Inicio .nav-link {
+    text-decoration: none;
+}
+.Inicio h2 {
+    color: black;
+    background-color: lightgrey;
+    border-radius:10px;
+    padding: 5px;
+    width: fit-content;  
+    margin: 0 auto;  
+}
+.Inicio h2 b {
+    animation: titilar 3s infinite;
+}
+@keyframes titilar {
+    0% {
+      color: red;  /* Color inicial */
+    }
+    50% {
+      color: darkcyan;  /* Color intermedio */
+    }
+    100% {
+      color:darkkhaki;  /* Color final, igual al inicial */
+    }
+}
+
+
+.Inicio .imagenes {
+    width: 40%;
+}
+@media (min-width: 768px) and (max-width: 996px) {
+  .Inicio .imagenes {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .Inicio .imagenes {
+    width: 100%;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+.Nosotros {
+    padding-top: 25vh;
+    min-height: 100vh;
+    font-family: 'Indie Flower', cursive;
+    background-image: url(./Fotos/cor-estr.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left;
+    
+}
+.Nosotros h1 {
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+}
+.Nosotros p {
+    background-color: white;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px;
+}
+.Nosotros img {
+    display: block;
+    border: 25px ridge red;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+}
+@media (max-width : 768px){
+    .Nosotros p {
+        width: 100%;
+        padding: 0;
+    }
+    .Nosotros img {
+        display: block;
+        border: 15px ridge red;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+

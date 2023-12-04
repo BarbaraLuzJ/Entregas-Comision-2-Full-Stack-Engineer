@@ -1,0 +1,18 @@
+.Tienda {
+    padding-top: 24vh;
+    min-height: 100vh;
+    background-color:white;
+    background-image: url(./Imagenes/formas-colores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+}
+
+.Tienda .cards-container {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+

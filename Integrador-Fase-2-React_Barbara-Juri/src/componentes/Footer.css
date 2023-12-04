@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&family=Luckiest+Guy&display=swap');
+/* font-family: 'Cinzel', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Luckiest Guy', cursive; */
+
+.Footer {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100vw;
+    height: 10%;
+    width: 100%;
+    position: relative; 
+    bottom: 0;
+    background-color: dodgerblue;
+    background-image: radial-gradient(circle at 120.17% 50%, #dbf79e 0, #cef8a1 10%, #bef5a1 20%, #a9ef9e 30%, #8ee598 40%, #6cd890 50%, #41cb89 60%, #00c188 70%, #00b98a 80%, #00b591 90%, #00b49b 100%);
+}
+
+.Footer h4 {
+  text-transform:uppercase;
+}
+
+@media (max-width:500px){
+  .Footer{
+    font-size: 1.5rem;
+  }
+  .Footer h4{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&family=Luckiest+Guy&display=swap');
+/* font-family: 'Cinzel', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Luckiest Guy', cursive; */
+/* Estilo para el componente Header */
+
+.Header {
+    position: fixed;
+    z-index: 4;
+    font-size: 2rem;
+    height: 20vh; 
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    background-color: dodgerblue;
+    background-image: radial-gradient(circle at 120.17% 50%, #dbf79e 0, #cef8a1 10%, #bef5a1 20%, #a9ef9e 30%, #8ee598 40%, #6cd890 50%, #41cb89 60%, #00c188 70%, #00b98a 80%, #00b591 90%, #00b49b 100%);
+}
+.Header .nombre {
+    width: 100%;
+    height: 55%;
+    padding: 15px;
+}
+
+.Header .navbar {
+    height: 45%;
+    background-image: radial-gradient(circle at 120.17% 50%, #dbf79e 0, #cef8a1 10%, #bef5a1 20%, #a9ef9e 30%, #8ee598 40%, #6cd890 50%, #41cb89 60%, #00c188 70%, #00b98a 80%, #00b591 90%, #00b49b 100%);
+}
+
+
+.Header .logo {
+    width: 34%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 10px;
+}
+@media (max-width:500px){
+    .Header .logo {
+        width: 65%;
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 10px;
+    }
+}
+@media (max-width: 996px){
+    .Header ul{
+        font-size: 1rem;
+        width: fit-content;
+        padding: 5px;
+        margin: 0;
+        background-color:lightslategrey;
+    }
+    .Header input{
+        width: 30%;
+        margin-right: 5px;
+        border: 2px solid black;
+    }
+    .Header button {
+        background-color:lightslategrey;
+        color: black;
+    }
+}
+
+
+
+

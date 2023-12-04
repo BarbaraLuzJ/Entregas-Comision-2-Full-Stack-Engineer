@@ -1,0 +1,55 @@
+.Producto {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background-color:indianred;
+    color: black;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: -6px 6px 6px black;
+    transition: 1s ease-in;
+}
+
+.Producto img {
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.Producto:hover {
+    background-image: radial-gradient(circle at 50% 50%, #b4f2a0 0, #a1ec9c 16.67%, #89e397 33.33%, #6cd890 50%, #49cd8a 66.67%, #10c488 83.33%, #00bd88 100%);
+}
+
+.Producto h3 {
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: -2px 2px 4px white;
+}
+
+.Producto p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+.Producto .botones {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Producto button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.Producto button:active {
+    border: 1px solid white;
+    transform: translateY(2px);
+}
+.Producto .cantidad {
+    color: white;
+    margin: auto 5px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Indie+Flower&family=Luckiest+Guy&display=swap');
+
+.Carrito  {
+    padding-top: 22vh;
+    min-height: 100vh;
+    font-family: 'Cinzel', serif;
+    background-color: lightcyan;
+    background-image: url(./Imagenes/pajaro-hojas.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+}
+
+.Carrito .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 96%;
+    margin: 0 auto; 
+}
+.Carrito th:first-child {
+    display: none;
+}
+.Carrito td:first-child {
+    display: none;
+}
+.Carrito .carrito-vacio {
+    background-image: radial-gradient(circle at 106.77% 50%, #fff6d7 0, #ffedcf 12.5%, #ffe0c2 25%, #fecfb2 37.5%, #f2b99d 50%, #e5a38a 62.5%, #dc927d 75%, #d58576 87.5%, #d17c74 100%);
+}
+

@@ -1,0 +1,35 @@
+.Tabla{
+    width: 95vw;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 5px auto;
+    position: relative;
+}
+
+.Tabla th,td {
+    border: 1px solid black;
+    width: 12.5%;
+    height: 6%;
+    padding: 10px;
+}
+
+.Tabla th {
+    text-transform: uppercase;
+    color: black;
+    background-color: darkcyan;
+}
+.Tabla .iconos {
+    font-size: 2rem;
+    margin-left: 30%;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.Tabla .iconos {
+    transform: translateY(4px);
+}
+.Tabla .icono-editar {
+    color: blue;
+}
+.Tabla .icono-eliminar {
+    color: red;
+}
