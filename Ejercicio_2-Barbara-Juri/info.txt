@@ -1,0 +1,16 @@
+{
+	"contenidoStr": "{\n  \"type\": \"module\",\n  \"name\": \"ejercicio_2-barbara-juri\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Ejercicio de Fs en Node\",\n  \"main\": \"ffggaa\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"author\": \"Barbara Juri y Matias Molina\",\n  \"license\": \"MIT\"\n}\n",
+	"contenidoObj": {
+		"type": "module",
+		"name": "ejercicio_2-barbara-juri",
+		"version": "1.0.0",
+		"description": "Ejercicio de Fs en Node",
+		"main": "ffggaa",
+		"scripts": {
+			"test": "echo \"Error: no test specified\" && exit 1"
+		},
+		"author": "Barbara Juri y Matias Molina",
+		"license": "MIT"
+	},
+	"size": 289
+}

@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "ejercicio_2-barbara-juri",
+  "version": "1.0.0",
+  "description": "Ejercicio de Fs en Node",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barbara Juri y Matias Molina",
+  "license": "MIT"
+}
