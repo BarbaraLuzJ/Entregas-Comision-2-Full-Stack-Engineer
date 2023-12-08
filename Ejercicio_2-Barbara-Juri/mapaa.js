@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'fs';
 
 const archivo = './package.json';
 const archivoTXT = './info.txt';
