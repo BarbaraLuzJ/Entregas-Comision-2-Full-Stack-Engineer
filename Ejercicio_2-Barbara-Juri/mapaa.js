@@ -6,7 +6,7 @@ const archivoTXT = './info.txt';
 
 async function leerYEscribirInfo(nombre, nuevoArchivo) {
     try {
-        const leerArchivo = await fs.readFile(nombre, 'utf-8');
+        const leerArchivo = await fs.promises.readFile(nombre, 'utf-8');
         const archivoObjeto = JSON.parse(leerArchivo);
         const archivoSize = Buffer.from(leerArchivo).length;
 
@@ -18,7 +18,7 @@ async function leerYEscribirInfo(nombre, nuevoArchivo) {
 
         console.log(info);
 
-        await fs.writeFile(nuevoArchivo, JSON.stringify(info, null, '\t'));
+        await fs.promises.writeFile(nuevoArchivo, JSON.stringify(info, null, '\t'));
     } catch (error) {
         console.error('Error:', error.message);
     }

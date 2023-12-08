@@ -1,29 +1,36 @@
 import fs from 'fs/promises';
 
-
 const archivo = 'package.json';
 const archivoTXT = './info.txt';
 
-
 const leerYEscribirInfo = (nombre, nuevoArchivo) => {
-    fs.readFile(nombre, 'utf-8')
+    fs.promises.readFile(nombre, 'utf-8')
         .then((leerArchivo) => {
             const archivoObjeto = JSON.parse(leerArchivo);
             const archivoSize = Buffer.from(leerArchivo).length;
 
             const info = {
-            contenidoStr: leerArchivo,
-            contenidoObj: archivoObjeto,
-            size: archivoSize
-        };
+                contenidoStr: leerArchivo,
+                contenidoObj: archivoObjeto,
+                size: archivoSize
+            };
 
-        console.log(info);
-
-        return fs.writeFile(nuevoArchivo, JSON.stringify(info, null, '\t'));
-    })
-    .catch((error) => {
-        console.error('Error:', error.message);
-});
+            return info;
+        })
+        .then(info => {
+            console.log(info);
+            return info;
+        })
+        .then(info => {
+            return fs.promises.writeFile(nuevoArchivo, JSON.stringify(info, null, '\t'), 'utf-8');
+        })
+        .then(() => {
+            console.log('Archivo creado');
+        })
+        .catch((error) => {
+            console.error('Error:', error.message);
+        });
 }
 
-leerYEscribirInfo(archivo, archivoTXT)
+leerYEscribirInfo(archivo, archivoTXT);
+
