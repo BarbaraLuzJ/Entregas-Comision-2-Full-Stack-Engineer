@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor con MongoDB y NodeJS</title>
+</head>
+<body>
+        <h1>Clientes</h1>
+    <form action="/api/clientes" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" required>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" required>
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" required>
+        <button type="submit">Agregar Cliente</button>
+    </form>
+
+    <h1>Artículos</h1>
+    <form action="/api/articulos" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" required>
+        <label for="stock">Stock:</label>
+        <input type="number" name="stock" required>
+        <button type="submit">Agregar Artículo</button>
+    </form>
+</body>
+</html>
